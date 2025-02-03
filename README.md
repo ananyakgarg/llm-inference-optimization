@@ -85,10 +85,10 @@ def benchmark_inference(
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/inference-optimization.git
+git clone https://github.com/yourusername/llm-inference-optimization.git
 
 # Navigate to project directory
-cd inference-optimization
+cd llm-inference-optimization
 
 # Install dependencies
 pip install torch transformers psutil
@@ -114,7 +114,7 @@ pip install torch transformers psutil
 python src/benchmark.py
 ```
 
-## 🔬 Implementation Details
+## Implementation Details
 
 ### Optimization Techniques
 
@@ -133,7 +133,7 @@ python src/benchmark.py
    - Balanced top-k (30) and top-p (0.85)
    - Repetition penalty implementation (1.2)
 
-## 📋 Project Structure
+## Project Structure
 
 ```
 ├── models/
@@ -146,7 +146,6 @@ python src/benchmark.py
     ├── benchmark.py
     ├── inference.py
     ├── quantization.py
-    └── qat_training.py
 ```
 
 ## Technical Dependencies
@@ -156,7 +155,7 @@ python src/benchmark.py
 - Python >= 3.8
 - QNNPACK backend support
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Areas of particular interest:
 - Additional quantization techniques
