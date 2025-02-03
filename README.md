@@ -85,10 +85,10 @@ def benchmark_inference(
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/llm-inference-optimization.git
+git clone https://github.com/yourusername/inference-optimization.git
 
 # Navigate to project directory
-cd llm-inference-optimization
+cd inference-optimization
 
 # Install dependencies
 pip install torch transformers psutil
