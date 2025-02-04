@@ -34,6 +34,19 @@ The framework provides extensive benchmarking capabilities:
 - Memory tracking at the process level
 - Token generation speed analysis
 
+### Raw Inference Time
+The image below shows the raw, averaged inference time for the three different models. As we can see, the quantized-aware training method was the fastest. 
+```
+==================================================
+Benchmark Summary:
+Baseline Model:       300.6741 sec (Std: 384.2307 sec)
+Dynamic Quantization: 276.1366 sec (Std: 553.7379 sec)
+QAT Quantized:        101.7277 sec (Std: 110.5416 sec)
+==================================================
+
+```
+
+
 ## Technical Architecture
 
 ### Core Components
