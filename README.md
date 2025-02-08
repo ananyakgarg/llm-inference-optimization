@@ -35,7 +35,7 @@ The framework provides extensive benchmarking capabilities:
 - Token generation speed analysis
 
 ### Raw Inference Time
-The image below shows the raw, averaged inference time for the three different models. As we can see, the quantized-aware training method was the fastest. 
+Below shows the raw, averaged inference time for the three different models. As we can see, the quantized-aware training method was the fastest. 
 ```
 ==================================================
 Benchmark Summary:
@@ -45,7 +45,15 @@ QAT Quantized:        101.7277 sec (Std: 110.5416 sec)
 ==================================================
 
 ```
-
+and below are inference times with perplexity. 20 runs for each model (base, quantized, QAT) are averaged. 
+```
+==================================================
+Benchmark Summary:
+Baseline Model:       294.2346 sec (Std: 437.3341 sec), Perplexity: 32.80
+Dynamic Quantization: 35.8609 sec (Std: 22.4715 sec), Perplexity: 32.82
+QAT Quantized:        56.3815 sec (Std: 26.6446 sec), Perplexity: 32.80
+==================================================
+```
 
 ## Technical Architecture
 
